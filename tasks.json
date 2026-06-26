@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "buy milk",
-    "done": false,
+    "done": true,
     "createdAt": "2026-06-17T07:47:01.011Z"
   },
   {
@@ -10,5 +10,23 @@
     "name": "exercise",
     "done": false,
     "createdAt": "2026-06-17T07:47:42.721Z"
+  },
+  {
+    "id": 3,
+    "name": "buy milk",
+    "done": false,
+    "createdAt": "2026-06-18T09:34:57.450Z"
+  },
+  {
+    "id": 4,
+    "name": "exercise",
+    "done": false,
+    "createdAt": "2026-06-18T09:35:34.102Z"
+  },
+  {
+    "id": 5,
+    "name": "exercise",
+    "done": false,
+    "createdAt": "2026-06-19T12:44:01.531Z"
   }
 ]

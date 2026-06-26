@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/hanirend/task-manager/issues"
   },
-  "homepage": "https://github.com/hanirend/task-manager#readme"
+  "homepage": "https://github.com/hanirend/task-manager#readme",
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "express": "^5.2.1",
+    "prisma": "^5.22.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
