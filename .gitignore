@@ -1,6 +1,6 @@
-tasks,json
+node_modules/
+tasks.json
 .env
 data/
 postgres_data/
-
 /generated/prisma
