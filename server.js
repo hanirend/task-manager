@@ -4,7 +4,15 @@ const { PrismaClient } = require('@prisma/client');
 const app = express();
 const prisma = new PrismaClient();
 
+const cors = require('cors');
+app.use(cors());
 app.use(express.json());
+
+const { register, login } = require('./auth');
+
+// Auth routes
+app.post('/register', register);
+app.post('/login', login);
 
 // GET /tasks – List all tasks
 app.get('/tasks', async (req, res) => {
