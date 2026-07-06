@@ -16,4 +16,10 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: "postgresql://postgres:password@localhost:5432/taskdb"
+      DATABASE_URL: "postgresql://postgres:password@db:5432/taskdb"
+  frontend:
+    build: ./client
+    ports:
+      - "5173:5173"
+    depends_on:
+      - app
