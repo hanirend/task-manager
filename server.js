@@ -29,12 +29,15 @@ app.get('/tasks', async (req, res) => {
 // POST /tasks - Add a new task
 app.post('/tasks', async (req, res) => {
   try {
-    const { name } = req.body;
+    const { name, priority } = req.body;
     if (!name) {
       return res.status(400).json({ error: 'Task name is required' });
     }
     const task = await prisma.task.create({
-      data: { name }
+      data: { 
+        name,
+        priority: priority || 'Medium'
+      }
     });
     res.status(201).json(task);
   } catch (error) {
