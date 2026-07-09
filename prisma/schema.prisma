@@ -20,6 +20,7 @@ model Task {
   id        Int      @id @default(autoincrement())
   name      String
   done      Boolean  @default(false)
+  priority  String   @default("Medium")
   userId    Int      @default(1)
   user      User     @relation(fields: [userId], references: [id])
   createdAt DateTime @default(now())
